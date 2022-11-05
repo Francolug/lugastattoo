@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Lugas´s Tattoo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+</head>
+
+<body style="background: url(./img/fondo2.jpg);">
+
+    <nav class="container mt-5 navbar navbar-expand-lg navbar-dark border border-2" style="background-color: rgb(211, 12, 12)">
+        <div class="container">
+            <a class="navbar-brand" href="#">Lugas´s Tattoo</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#inicio">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#turnos">Turnos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#diseños">Diseños</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#contacto">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <header id="inicio">
+            <div class="container-fluid">
+                <div class="row bg-dark text-bg-dark mt-5 bg-opacity-75">
+                    <div class="col-lg-4 col-sm-12 d-flex flex-column align-items-center justify-content-center p-5">
+                        <h1 class="mb-5">Lugas´s Tattoo</h1>
+                        <p>Somos un estudio de tatuajes especializado en cualquier estilo, desde blackwork a trabajos realistas. Lo que sea que te quieras tatuar nosotros podemos hacerlo.</p>
+                    </div>
+                    <div class="col-lg-4 col-sm-12 d-flex justify-content-center self-align-center">
+                        <img src="./img/dragon.png" class="img-fluid" alt="Tattoo">
+                    </div>
+                    <div class="col-lg-4 col-sm-12 d-flex flex-column justify-content-center p-5 align-items-end">
+                        <h2 class="text-white mb-5">Estilos</h2>
+                        <p>Blackwork: solo con tinta negra</p>
+                        <p>Tradicional (Old School)</p>
+                        <p>Neotradicional (Neotrad o New School)
+                        <p>Dotwork (puntillista)</p>
+                        <p>Black & Grey.</p>
+                        <p>Acuarela.</p>
+                        <p>Japonés Tradicional y Neo Japonés.</p>
+                        <p>Realista.</p>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <section id="turnos">
+            <div class="container">
+                <div class="row mt-5">
+                    <div class="col-sm-12 col-lg-5 d-flex flex-column p-5 justify-content-center border border-2 align-items-center" style="background-color: rgba(211, 12, 12, 0.74)">
+                        <h2 class="text-white mb-4" >TATUATE</h2>
+                        <p class="text-white">Si tenes ganas de tatuarte, contactanos o dejanos tu contacto, ni bien podamos nos vamos a
+                            estar comunicando para ver tu diseño y acordar un turno.</p>
+                    </div>
+                    <div class="col-lg-2"></div>
+                    <div class="col-sm-12 col-lg-5 d-flex flex-column p-5 justify-content-center align-items-center border border-2 text-white" style="background-color: rgba(211, 12, 12, 0.74)">
+                        <form action="procesar.php" method="post"></form>
+                        <div class="mb-3">
+                            <label for="exampleFormControlInput1" class="form-label">Nombre</label>
+                            <input type="text" class="form-control" placeholder="Nombre Completo">
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleFormControlInput1" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="exampleFormControlInput1"
+                                placeholder="nombre@ejemplo.com">
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleFormControlTextarea1" class="form-label">Dejanos tu consulta</label>
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+
+                            <button type="submit" class="btn btn-dark mt-4">Enviar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="diseños">
+            <div class="container-fluid">
+                <div class="row bg-dark text-bg-dark mt-5 p-3 bg-opacity-75">
+                    <div class="col-sm-12 col-lg-12 d-flex flex-row justify-content-center p-3">
+                        <h1 class="text-white">EJEMPLOS DE DISEÑOS</h1>
+                    </div>
+                    <div class="col-12 col-lg-6 mx-auto mb-2">
+                        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0"
+                                    class="active" aria-current="true" aria-label="Slide 1"></button>
+                                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                                    aria-label="Slide 2"></button>
+                                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                                    aria-label="Slide 3"></button>
+                            </div>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="./img/tattoo1.jpg" class="d-block w-100" alt="...">
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <h5>Ejemplo N°1</h5>
+                                        <p>Te hacemos el diseño que vos quieras en el estilo que quieras.</p>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="./img/tattoo2.jpg" class="d-block w-100" alt="...">
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <h5>Ejemplo N°2</h5>
+                                        <p>Cualquier tamaño, ya sea chico o grande.</p>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="./img/tattoo3.jpg" class="d-block w-100" alt="...">
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <h5>Ejemplo N°3</h5>
+                                        <p>Hacenos tu consulta y acordemos un turno!!</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button"
+                                data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button"
+                                data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <section class="container" id="contacto">
+            <div class="row mt-5 mb-5">
+                <div class="col-sm-12 col-lg-3 d-flex flex-column p-5 border border-2 justify-content-center" style="background-color: rgba(211, 12, 12, 0.548)">
+                    <p class="text-white">CONTACTO</p>
+                    <p class="text-white">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Unde accusamus rem eum libero
+                        deserunt dolores, soluta at beatae doloribus laboriosam!</p>
+                </div>
+                <div class="col-lg-1"></div>
+                <div class="col-sm-12 col-lg-4 d-flex flex-column p-5 border border-2 justify-content-center" style="background-color: rgba(211, 12, 12, 0.548)">
+                    <p class="text-white">REDES</p>
+                    <p class="text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel unde veniam quo possimus
+                        consectetur delectus velit dolore exercitationem adipisci, cupiditate placeat similique,
+                        corrupti, assumenda in reprehenderit modi inventore obcaecati nihil!</p>
+                </div>
+                <div class="col-lg-1"></div>
+                <div class="col-sm-12 col-lg-3 d-flex flex-column p-5 border border-2 justify-content-center" style="background-color: rgba(211, 12, 12, 0.548)">
+                    <p class="text-white">SOBRE NOSOTROS</p>
+                    <p class="text-white">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id non ratione ducimus illum
+                        praesentium minus velit ea, incidunt ab debitis sequi consequatur cum perspiciatis explicabo
+                        suscipit iste, est totam laudantium voluptatem deserunt illo esse doloribus voluptates. Odit
+                        sed aspernatur veritatis.</p>
+                </div>
+            </div>
+        </section>
+    </footer>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
